@@ -7,25 +7,37 @@ CHARITY_NAME_MIN_LENGTH = 1
 DESCRIPTION_NAME_MIN_LENGTH = 1
 
 FORMAT = "%Y/%m/%d %H:%M:%S"
-SPREADSHEET_TITLE = 'Отчет от {}'
-SPREADSHEET_LOCALE = 'ru_RU'
-SHEET_TYPE = 'GRID'
-SHEET_ID = 0
-SHEET_TITLE = 'Закрытые проекты'
 SHEET_ROW_COUNT = 100
 SHEET_COLUMN_COUNT = 3
 SHEET_RANGE = 'A1:C{}'
-SHEET_HEADER_A1 = 'Отчет от'
-SHEET_HEADER_A2 = 'Топ проектов по скорости закрытия'
-SHEET_HEADER_A3 = 'Название проекта'
-SHEET_HEADER_B3 = 'Время сбора'
-SHEET_HEADER_C3 = 'Описание'
-SHEETS_VERSION = 'v4'
-DRIVE_VERSION = 'v3'
 PERMISSION_BODY_TYPE = 'user'
 PERMISSION_BODY_ROLE = 'writer'
 MAJOR_DIMENSION = 'ROWS'
 VALUE_INPUT_OPTION = 'USER_ENTERED'
+SPREADSHEET_BODY = dict(
+    properties=dict(
+        title='Отчет от {}',
+        locale='ru_RU'
+    ),
+    sheets=[
+        dict(
+            properties=dict(
+                sheetType='GRID',
+                sheetId=0,
+                title='Закрытые проекты',
+                gridProperties=dict(
+                    rowCount=SHEET_ROW_COUNT,
+                    columnCount=SHEET_COLUMN_COUNT
+                )
+            )
+        )
+    ]
+)
+TABLE_VALUES = [
+    ['Отчет от '],
+    ['Топ проектов по скорости закрытия'],
+    ['Название проекта', 'Время сбора', 'Описание']
+]
 
 
 class Settings(BaseSettings):

@@ -1,9 +1,9 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=1000&color=F71329&multiline=true&width=435&lines=+QRkot_spreadseets)](https://git.io/typing-svg)  
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1000&color=1D39F7&multiline=true&width=435&lines=+QRkot_spreadseets)](https://git.io/typing-svg)  
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=15&duration=2000&pause=1000&color=1FBB30F6&multiline=true&width=435&lines=+QRkot_spreadseets)](https://git.io/typing-svg)    
-[![Typing SVG](https://img.shields.io/badge/QRkot_spreadseets-sprint--23%20ver.1-red)](https://git.io/typing-svg)
+[![Typing SVG](https://img.shields.io/badge/QRkot_spreadseets-sprint--23%20ver.2-red)](https://git.io/typing-svg)
 
-### Проект: QRkot_spreadseets. Спринт-23, ver.1, Зеленковский Сергей  
+### Проект: QRkot_spreadseets. Спринт-23, ver.2, Зеленковский Сергей  
 ![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)  
 ![](https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png)
 ![](https://cdn-icons-png.flaticon.com/128/104/104068.png)

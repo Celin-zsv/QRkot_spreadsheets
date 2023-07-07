@@ -76,3 +76,21 @@ async def check_charity_project_before_delete(
             status_code=400,
             detail='Закрытый проект нельзя редактировать!')
     return charity_project_db
+
+
+def check_google_table_range(
+    fact_column_count: int,
+    constant_column_count: int,
+    fact_row_count: int,
+    constant_row_count: int
+):
+    if (
+        fact_column_count > constant_column_count or
+        fact_row_count > constant_row_count
+    ):
+        raise HTTPException(
+            status_code=400,
+            detail=f'Фактическое кол-во полей {fact_column_count} '
+            f'допустимое - {constant_column_count}. '
+            f'Фактическое кол-во строк {fact_row_count}, '
+            f'допустимое - {constant_row_count}.')
